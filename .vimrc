@@ -47,6 +47,15 @@ map <F9> :QuickRun<CR>
 
 "Source .vimrc
 nnoremap <leader>sv :source $MYVIMRC<CR>
+nnoremap <leader>ev :vsplit $MYVIMRC<CR>
+
+" Comments
+nnoremap <leader>c :Comment<CR>
+
+" ESC insert remapping
+inoremap jk <ESC>
+inoremap <ESC> <nop>
+
 
 " Cursor option
 let &t_SI = "\e[5 q"

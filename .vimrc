@@ -99,15 +99,6 @@ let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
 
-" Markdown preview
-let g:mkdp_refresh_slow=1
-let g:mkdp_markdown_css='/home/ra/.vim/misc/git_template.css'
-map <F10> :MarkdownPreview<CR>
-
-" Vim-markdown
-autocmd FileType markdown let b:sleuth_automatic=0
-autocmd FileType markdown set conceallevel=0
-autocmd FileType markdown normal zR
 
 " FZF settings
 let $FZF_DEFAULT_OPTS = '--bind ctrl-a:select-all'

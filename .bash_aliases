@@ -18,4 +18,4 @@ alias conda_env="conda env list"
 alias conda_list="conda list"
 
 # yadm alias
-alias yadm_push="yadm push -u origin main"
+alias yadm_push="yadm push -u origin master"

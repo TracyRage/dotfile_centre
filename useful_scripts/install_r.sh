@@ -29,21 +29,21 @@ sudo apt-get -y install r-base
 
 # Install other staff
 sudo apt-get -y install \
-htop \
-libcurl4-openssl-dev \
-libssl-dev \
-libgeos-dev \
-libgdal-dev \
-libproj-dev \
-libxml2-dev \
-libudunits2-dev \
-libsodium-dev \
-pandoc \
-openjdk-8-jdk \
-openjdk-8-jre \
-cargo \
-libcairo2-dev \
-libfreetype6-dev \
-libclang-dev \
-ttf-mscorefonts-installer \
-fonts-roboto
+	htop \
+	libcurl4-openssl-dev \
+	libssl-dev \
+	libgeos-dev \
+	libgdal-dev \
+	libproj-dev \
+	libxml2-dev \
+	libudunits2-dev \
+	libsodium-dev \
+	pandoc \
+	openjdk-8-jdk \
+	openjdk-8-jre \
+	cargo \
+	libcairo2-dev \
+	libfreetype6-dev \
+	libclang-dev \
+	ttf-mscorefonts-installer \
+	fonts-roboto

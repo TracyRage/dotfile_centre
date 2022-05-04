@@ -19,6 +19,7 @@ set incsearch
 " Package manager
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
+Plug 'xuhdev/vim-latex-live-preview', {'for': 'tex'}
 Plug 'tpope/vim-commentary'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-scripts/AutoComplPop'
@@ -52,15 +53,12 @@ nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 " Comments
 nnoremap <leader>c :Comment<CR>
 
-" ESC insert remapping
-inoremap jk <ESC>
-inoremap <ESC> <nop>
-
-
 " Cursor option
 let &t_SI = "\e[5 q"
 let &t_EI = "\e[2 q"
 
+" Toggle spellcheck
+nnoremap <leader>en :setlocal spell!<CR>
 
 " Ale configuration
 let g:ale_completion_enabled = 1
@@ -144,3 +142,9 @@ nnoremap [s [szz
 
 " Copy paragraphs
 nnoremap cp yap<S-}>p
+
+" Live LATEX setup
+let g:livepreview_previewer = 'zathura'
+let g:livepreview_engine = 'xelatex'
+let g:livepreview_use_biber = 1
+nnoremap <leader>p :LLPStartPreview<CR>

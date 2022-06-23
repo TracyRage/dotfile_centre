@@ -143,6 +143,7 @@ nnoremap [s [szz
 " Copy paragraphs
 nnoremap cp yap<S-}>p
 
+
 " Live LATEX setup
 let g:livepreview_previewer = 'zathura'
 let g:livepreview_engine = 'xelatex'

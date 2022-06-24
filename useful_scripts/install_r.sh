@@ -5,9 +5,9 @@ set -e
 set -u
 set -o pipefail
 
-
-OSNAME=ubuntu
-OSVERS=focal
+# Get OS name and version
+OSNAME=$(awk -F= '/ID_LIKE/ {print $2}' /etc/os-release)
+OSVERS=$(awk -F= '/UBUNTU_CODENAME/ {print $2}' /etc/os-release)
 
 # Check for existing R and packages
 dpkg -l | grep -E "(r-base-core|cran)"

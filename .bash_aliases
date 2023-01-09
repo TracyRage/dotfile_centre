@@ -1,6 +1,6 @@
 # General alias
-alias upgrade="sudo apt upgrade && sudo apt autoremove"
-alias install="sudo apt install"
+alias upgrade="sudo nala upgrade"
+alias install="sudo nala install"
 alias sd="shutdown now"
 
 # Tree

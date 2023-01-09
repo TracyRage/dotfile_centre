@@ -60,6 +60,7 @@ let &t_EI = "\e[2 q"
 " Toggle spellcheck
 nnoremap <leader>en :setlocal spell!<CR>
 
+
 " Ale configuration
 let g:ale_completion_enabled = 1
 let g:ale_linters = {'python': ["flake8"], 'bash': ["shellcheck"], 'julia': ["languageserver"]}

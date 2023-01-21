@@ -1,5 +1,5 @@
 # General alias
-alias upgrade="sudo nala upgrade"
+alias upgrade="sudo nala upgrade && flatpak update"
 alias install="sudo nala install"
 alias sd="shutdown now"
 
